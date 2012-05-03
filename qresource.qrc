@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/Toolbar">
+        <file alias="Folder.png">Images/Folder.png</file>
+        <file alias="Save.png">Images/Save.png</file>
+        <file alias="Tool.png">Images/Tool.png</file>
+        <file alias="Find.png">Images/Find.png</file>
+        <file alias="ZoomIn.png">Images/ZoomIn.png</file>
+        <file alias="ZoomOut.png">Images/ZoomOut.png</file>
+        <file alias="New.png">Images/New.png</file>
+        <file alias="Print.png">Images/Print.png</file>
+        <file alias="Delete.png">Images/Delete.png</file>
+        <file alias="Refresh.png">Images/Refresh.png</file>
+        <file alias="FindNext.png">Images/FindNext.png</file>
+        <file alias="Clipboard.png">Images/Clipboard.png</file>
+    </qresource>
+    <qresource prefix="/TextFinder">
+        <file alias="Previous.png">Images/Previous.png</file>
+        <file alias="Next.png">Images/Next.png</file>
+        <file alias="Magnifying.png">Images/Magnifying.png</file>
+    </qresource>
+    <qresource prefix="/Utils">
+        <file alias="Loading.gif">Images/Loading.gif</file>
+        <file alias="Loading48x48.gif">Images/Loading48x48.gif</file>
+    </qresource>
+    <qresource prefix="/Tabbar">
+        <file alias="Document.png">Images/Document.png</file>
+    </qresource>
+    <qresource prefix="/About">
+        <file alias="Logo.png">Images/Logo.png</file>
+        <file alias="Info.png">Images/Info.png</file>
+    </qresource>
+    <qresource prefix="/Icon">
+        <file alias="Logo32x32.png">Images/Logo32x32.png</file>
+    </qresource>
+    <qresource prefix="/ChartView">
+        <file alias="Warning128x128.png">Images/Warning128x128.png</file>
+    </qresource>
+</RCC>
