@@ -80,7 +80,8 @@ HEADERS  += \
     Source/Keyword/Chart.h \
     Source/Utils/LoadingPopup.h
 
-OTHER_FILES +=
+OTHER_FILES += \
+    README.md
 
 RESOURCES += \
     qresource.qrc
