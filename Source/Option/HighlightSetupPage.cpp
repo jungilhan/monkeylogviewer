@@ -34,10 +34,8 @@ HighlightSetupPage::HighlightSetupPage(QWidget* parent)
     , m_textListWidget(0)
     , m_colorNStyleGroupBox(0)
     , m_textLabel(0)
-    , m_foregroudLabel(0)
     , m_backgroudLabel(0)
     , m_styleLabel(0)
-    , m_foregroundColorButton(0)
     , m_backgroundColorButton(0)
     , m_styleComboBox(0)
     , m_addNRemoveGroupBox(0)
@@ -61,10 +59,8 @@ HighlightSetupPage::~HighlightSetupPage()
     delete m_highlightTextGroupBox;
 
     delete m_textLabel;
-    delete m_foregroudLabel;
     delete m_backgroudLabel;
     delete m_styleLabel;
-    delete m_foregroundColorButton;
     delete m_backgroundColorButton;
     delete m_styleComboBox;
     delete m_colorNStyleGroupBox;
@@ -132,32 +128,22 @@ void HighlightSetupPage::initColorNStyleWidgetGroup()
     m_textLabel->setAutoFillBackground(true);
     m_textLabel->setFrameStyle(QFrame::Box);
 
-    m_foregroudLabel = new QLabel(m_colorNStyleGroupBox);
-    m_foregroudLabel->setGeometry(10, 57 + groupBoxTextMarginTop, 84, 20);
-    m_foregroudLabel->setText(tr("Foreground"));
-
     m_backgroudLabel = new QLabel(m_colorNStyleGroupBox);
-    m_backgroudLabel->setGeometry(10, 90 + groupBoxTextMarginTop, 84, 20);
-    m_backgroudLabel->setText(tr("Backgroud"));
+    m_backgroudLabel->setGeometry(10, 57 + groupBoxTextMarginTop, 84, 20);
+    m_backgroudLabel->setText(tr("Line Color"));
 
     m_styleLabel = new QLabel(m_colorNStyleGroupBox);
-    m_styleLabel->setGeometry(10, 128 + groupBoxTextMarginTop, 40, 20);
+    m_styleLabel->setGeometry(10, 90 + groupBoxTextMarginTop, 40, 20);
     m_styleLabel->setText(tr("Style"));
 
-    m_foregroundColorButton = new QPushButton(m_colorNStyleGroupBox);
-    m_foregroundColorButton->setGeometry(99, 50 + groupBoxTextMarginTop, 30, 30);
-    m_foregroundColorButton->setFlat(true);
-    m_foregroundColorButton->setAutoFillBackground(true);
-    connect(m_foregroundColorButton, SIGNAL(clicked()), this, SLOT(openForegroundColorDialog()));
-
     m_backgroundColorButton = new QPushButton(m_colorNStyleGroupBox);
-    m_backgroundColorButton->setGeometry(99, 85 + groupBoxTextMarginTop, 30, 30);
+    m_backgroundColorButton->setGeometry(99, 50 + groupBoxTextMarginTop, 30, 30);
     m_backgroundColorButton->setFlat(true);
     m_backgroundColorButton->setAutoFillBackground(true);
     connect(m_backgroundColorButton, SIGNAL(clicked()), this, SLOT(openBackgroundColorDialog()));
 
     m_styleComboBox = new QComboBox(m_colorNStyleGroupBox);
-    m_styleComboBox->setGeometry(50, 128 + groupBoxTextMarginTop, 80, 22);
+    m_styleComboBox->setGeometry(50, 90 + groupBoxTextMarginTop, 80, 22);
     m_styleComboBox->addItem(tr("Normal"));
     //m_styleComboBox->addItem(tr("Italic"));
     //m_styleComboBox->addItem(tr("Bold"));
@@ -213,14 +199,13 @@ QColorDialog* HighlightSetupPage::createColorDialog(const QColor& initialColor)
 
 void HighlightSetupPage::paintColor(const QColor& foreground, const QColor& background)
 {
-    Q_ASSERT(m_textLabel && m_foregroundColorButton && m_backgroundColorButton);
+    Q_ASSERT(m_textLabel && m_backgroundColorButton);
 
     QPalette palette;
     palette.setColor(QPalette::WindowText, foreground);
     palette.setColor(QPalette::Window, background);
     m_textLabel->setPalette(palette);
 
-    changeButtonColor(m_foregroundColorButton, foreground);
     changeButtonColor(m_backgroundColorButton, background);
 }
 
@@ -345,17 +330,6 @@ void HighlightSetupPage::textListItemChanged(QListWidgetItem* current, QListWidg
     paintColor(textFormat.foreground().color(), textFormat.background().color());
 }
 
-void HighlightSetupPage::openForegroundColorDialog()
-{
-    if (m_textLabel->text().isEmpty())
-        return ;
-
-    QColorDialog *dialog = createColorDialog(m_foregroundColorButton->palette().button().color());
-
-    connect(dialog, SIGNAL(colorSelected(QColor)), this, SLOT(foregroudColorChanged(QColor)));
-    dialog->open();
-}
-
 void HighlightSetupPage::openBackgroundColorDialog()
 {
     if (m_textLabel->text().isEmpty())
@@ -364,16 +338,18 @@ void HighlightSetupPage::openBackgroundColorDialog()
     QColorDialog *dialog = createColorDialog(m_backgroundColorButton->palette().button().color());
 
     connect(dialog, SIGNAL(colorSelected(QColor)), this, SLOT(backgroudColorChanged(QColor)));
+    connect(dialog, SIGNAL(colorSelected(QColor)), this, SLOT(foregroudColorChanged(QColor)));
     dialog->open();
 }
 
 void HighlightSetupPage::foregroudColorChanged(const QColor& color)
 {
-    Q_ASSERT(!m_textLabel->text().isEmpty());
+    Q_ASSERT(!m_textLabel->text().isEmpty());    
 
     QString text = m_textListWidget->currentItem()->text();
     QTextCharFormat textFormat = m_highlightingRules.value(text);
-    textFormat.setForeground(color);
+    //textFormat.setForeground(color);
+    textFormat.setForeground(QColor(255, 255, 255));
     m_highlightingRules.insert(text, textFormat);
 
     paintColor(color, textFormat.background().color());

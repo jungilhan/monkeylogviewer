@@ -63,7 +63,6 @@ private slots:
     void addClicked();
     void removeClicked();
     void textListItemChanged(QListWidgetItem* current, QListWidgetItem* previous);
-    void openForegroundColorDialog();
     void openBackgroundColorDialog();
     void foregroudColorChanged(const QColor& color);
     void backgroudColorChanged(const QColor& color);
@@ -77,7 +76,6 @@ private:
 
     QGroupBox* m_colorNStyleGroupBox;
     QLabel* m_textLabel;
-    QLabel* m_foregroudLabel;
     QLabel* m_backgroudLabel;
     QLabel* m_styleLabel;
     QPushButton* m_foregroundColorButton;
