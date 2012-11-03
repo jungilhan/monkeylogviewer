@@ -114,7 +114,7 @@ void MenuBar::init()
     connect(m_openAction, SIGNAL(triggered()), this, SIGNAL(openTriggered()));
     m_menuList.last()->addAction(m_openAction);
 
-    m_openClipboardAction = new QAction(QIcon(":/Toolbar/Clipboard.png"), tr("&Open for Clipboard"), this);
+    m_openClipboardAction = new QAction(QIcon(":/Toolbar/Clipboard.png"), tr("&Open Clipboard"), this);
     m_openClipboardAction->setShortcut(QKeySequence::Paste);
     addToolBarAction(m_openClipboardAction);
     connect(m_openClipboardAction, SIGNAL(triggered()), this, SIGNAL(openClipboardTriggered()));

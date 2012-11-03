@@ -49,8 +49,8 @@ void OptionDialog::init()
     setFixedSize(400 + offsetW, 320 + offsetH);
 
     m_tabWidget = new QTabWidget(this);
-    m_tabWidget->addTab(createFontSetupPage(), tr("Font && Colors"));
     m_tabWidget->addTab(createHighlightSetupPage(), tr("Highlight Settings"));
+    m_tabWidget->addTab(createFontSetupPage(), tr("Font && Colors"));    
     m_tabWidget->setGeometry(10, 20, 380 + offsetW, 260 + offsetH);
 
     m_okButton = new QPushButton(tr("OK"), this);
