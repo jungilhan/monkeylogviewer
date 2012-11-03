@@ -72,7 +72,7 @@ HighlightSetupPage::~HighlightSetupPage()
 
     delete m_colorDialog;
 
-    // TODO ÇØ½Ã »èÁ¦.
+    // TODO í•´ì‹œ ì‚­ì œ.
 }
 
 void HighlightSetupPage::showEvent(QShowEvent* event)
