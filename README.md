@@ -24,3 +24,30 @@ The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is des
  * Line numbers
  * Update support - only available in Windows
 
+##Dependency 
+ * Qt version 4.7 or higher 
+
+##How to build
+###On the command line
+ * Setp 1: Set environment variables in your ~/.profie 
+
+ ```
+ export QTDIR=/Your/Qt/Directory
+ ```
+ * Step 2: Create a platform specific Makefile
+
+ ```
+ cd monkeylogviewer
+ qmake
+ ``` 
+ * Step 3: Compile
+ ```
+ make 
+ ```
+###Qt Creator
+ * Setp 1: Open a project
+  * Select "File > Open File or Project"
+  * Select the monkeyLogviewer.pro to open 
+ * Step 2: Compile
+  * "CTRL + B"
+
