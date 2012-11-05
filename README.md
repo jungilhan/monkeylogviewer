@@ -1,10 +1,13 @@
 Monkey Log Viewer
 ========
 
-The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is designed to find information easily from the plain text file. You can fully customize the keyword highlighting and color scheme. This feature possible to quickly find interested keyword. It is a free and open source project.
+The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is designed to find information easily from the plain text file. You can fully customize the keyword highlighting and color scheme. This feature possible to quickly find interested keyword.
 
 ##Screenshot
 ![screenshot#1](https://lh5.googleusercontent.com/-22li12ILdjE/UJT5hZ2P4bI/AAAAAAAAGe4/E5urhDr7dNo/s800/monkeylogviewer-20121103.png)
+
+##Demo Video
+ * http://www.youtube.com/watch?v=YY23R3RmRz0
 
 ##Features
  * Cross-platform. Runs on Linux, Windows, OS/2
@@ -45,10 +48,16 @@ The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is des
  make 
  ```
 
-###Qt Creator
+###Using Qt Creator
  * Setp 1: Open a project
   * Select "File > Open File or Project"
   * Select the monkeyLogviewer.pro to open 
  * Step 2: Compile
   * "CTRL + B"
 
+###Win7/msvc2008
+ * Add below code to monkeyLogViewer.pro
+
+ ```
+ win32:LIBS += shell32.lib
+ ```
