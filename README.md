@@ -27,8 +27,13 @@ The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is des
  * Line numbers
  * Update support - only available in Windows
 
+##Downloads
+ The latest stable version of Monkey Log Viewer is 1.1.0
+ * Windows Installer - <a href="http://monkeylogviewer.googlecode.com/files/monkeyLogViewer-1.1.0.exe">monkeyLogViewer-1.1.0.exe</a> 
+ * Windows Portable - <a href="http://monkeylogviewer.googlecode.com/files/monkeyLogViewer-1.1.0.zip">monkeyLogViewer-1.1.0.zip</a> 
+
 ##Dependency 
- * Qt version 4.7 or higher 
+ * Qt version 4.7 or higher (It yout want to build source code)
 
 ##How to build
 ###On the command line
