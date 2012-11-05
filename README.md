@@ -44,6 +44,7 @@ The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is des
  ```
  make 
  ```
+
 ###Qt Creator
  * Setp 1: Open a project
   * Select "File > Open File or Project"
