@@ -188,10 +188,19 @@ void Updater::startPatch()
     m_patchFile.replace("/", "\\");
 
 #ifdef Q_OS_WIN
+    // Support for unicode - patched by cowo78@gamil.com
+#ifdef UNICODE
+    int result = (int)::ShellExecuteW(0, L"open", m_patchFile.toStdWString().c_str(), 0, 0, SW_SHOWNORMAL);
+#else
     int result = (int)::ShellExecuteA(0, "open", m_patchFile.toUtf8().constData(), 0, 0, SW_SHOWNORMAL);
+#endif
     if (result == SE_ERR_ACCESSDENIED) {
         // Requesting elevation
+#ifdef UNICODE
+        result = (int)::ShellExecuteW(0, L"runas", m_patchFile.toStdWString().c_str(), 0, 0, SW_SHOWNORMAL);
+#else
         result = (int)::ShellExecuteA(0, "runas", m_patchFile.toUtf8().constData(), 0, 0, SW_SHOWNORMAL);
+#endif
     }
 #endif
 

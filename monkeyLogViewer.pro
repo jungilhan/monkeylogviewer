@@ -87,3 +87,5 @@ RESOURCES += \
     qresource.qrc
 
 RC_FILE = monkeyLogViewer.rc
+
+INCLUDEPATH += .
