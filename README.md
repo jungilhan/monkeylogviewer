@@ -3,6 +3,13 @@ Monkey Log Viewer
 
 The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is designed to find information easily from the plain text file. You can fully customize the keyword highlighting and color scheme. This feature possible to quickly find interested keyword.
 
+##News
+ * Joined the <a href="http://qt-project.org/wiki/QtonPi-Accepted">Qt on Raspberry Pi project</a> - December 8 2011
+ * 1.1.0 released - May 26 2011
+ * 1.0.1 released - April 1 2011
+ * 1.0.0 released - March 9 2011
+ * 1.0.0 RC released - February 21 2011
+
 ##Screenshot
 ![screenshot#1](https://lh5.googleusercontent.com/-22li12ILdjE/UJT5hZ2P4bI/AAAAAAAAGe4/E5urhDr7dNo/s800/monkeylogviewer-20121103.png)
 
