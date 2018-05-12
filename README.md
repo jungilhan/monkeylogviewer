@@ -1,22 +1,23 @@
 Monkey Log Viewer
 ========
+## Please note that this project no longer maintained.
 
-The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is designed to find information easily from the plain text file. You can fully customize the keyword highlighting and color scheme. This feature possible to quickly find interested keyword.
+The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is designed to find information easily from the plain text log files. You can fully customize the keyword highlighting and color scheme. This features make it possible to quickly find interested keyword in log files.
 
-##News
+## News
  * Joined the <a href="http://qt-project.org/wiki/QtonPi-Accepted">Qt on Raspberry Pi project</a> - December 8 2011
  * 1.1.0 released - May 26 2011
  * 1.0.1 released - April 1 2011
  * 1.0.0 released - March 9 2011
  * 1.0.0 RC released - February 21 2011
 
-##Screenshot
+## Screenshot
 ![screenshot#1](https://lh5.googleusercontent.com/-22li12ILdjE/UJT5hZ2P4bI/AAAAAAAAGe4/E5urhDr7dNo/s800/monkeylogviewer-20121103.png)
 
-##Demo Video
+## Demo Video
  * http://www.youtube.com/watch?v=YY23R3RmRz0
 
-##Features
+## Features
  * Cross-platform. Runs on Linux, Windows, OS/2
  * Colorize log line
  * Export as HTML
@@ -34,17 +35,17 @@ The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is des
  * Line numbers
  * Update support - only available in Windows
 
-##Downloads
+## Downloads
  The latest stable version of Monkey Log Viewer is 1.1.0
- * Windows Installer - <a href="http://monkeylogviewer.googlecode.com/files/monkeyLogViewer-1.1.0.exe">monkeyLogViewer-1.1.0.exe</a> 
- * Windows Portable - <a href="http://monkeylogviewer.googlecode.com/files/monkeyLogViewer-1.1.0.zip">monkeyLogViewer-1.1.0.zip</a> 
- * Source - <a href="http://monkeylogviewer.googlecode.com/files/monkeyLogViewer-1.1.0.tar.gz">monkeyLogViewer-1.1.0.tar.gz</a>
+ * Windows Installer - <a href="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/monkeylogviewer/monkeyLogViewer-1.1.0.exe">monkeyLogViewer-1.1.0.exe</a> 
+ * Windows Portable - <a href="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/monkeylogviewer/monkeyLogViewer-1.1.0.zip</a> 
+ * Source - <a href="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/monkeylogviewer/monkeyLogViewer-1.1.0.tar.gz">monkeyLogViewer-1.1.0.tar.gz</a>
 
-##Dependency 
+## Dependency 
  * Qt version 4.7 or higher
 
 ##How to build
-###On the command line
+### On the command line
  * Setp 1: Set environment variables in your ~/.profie 
 
  ```
@@ -61,14 +62,14 @@ The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is des
  make 
  ```
 
-###Using Qt Creator
+### Using Qt Creator
  * Setp 1: Open a project
   * Select "File > Open File or Project"
   * Select the monkeyLogviewer.pro to open 
  * Step 2: Compile
   * "CTRL + B"
 
-###Win7/msvc2008
+### Win7/msvc2008
  * Add below code to monkeyLogViewer.pro
 
  ```
