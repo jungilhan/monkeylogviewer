@@ -1,6 +1,6 @@
 Monkey Log Viewer
 ========
-## Please note that this project no longer maintained.
+## Please note that this project is no longer maintained.
 
 The Monkey Log Viewer is viewer for log files developed with Qt 4.7.0. It is designed to find information easily from the plain text log files. You can fully customize the keyword highlighting and color scheme. This features make it possible to quickly find interested keyword in log files.
 
