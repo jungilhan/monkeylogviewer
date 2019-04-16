@@ -18,7 +18,7 @@
 #ifndef OPTIONDIALOG_H
 #define OPTIONDIALOG_H
 
-#include <QtGui/QDialog>
+#include <QDialog>
 
 class QTabWidget;
 class QPushButton;

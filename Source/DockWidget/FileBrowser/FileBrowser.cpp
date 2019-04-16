@@ -18,8 +18,8 @@
 #include "FileBrowser.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QTreeView>
-#include <QtGui/QDirModel>
+#include <QTreeView>
+#include <QDirModel>
 #include <QtCore/QModelIndex>
 
 FileBrowser::FileBrowser(const QString& title, QWidget *parent)

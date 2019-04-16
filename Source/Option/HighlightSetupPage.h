@@ -18,7 +18,7 @@
 #ifndef HIGHLIGHTSETUPPAGE_H
 #define HIGHLIGHTSETUPPAGE_H
 
-#include <QtGui/QWidget>
+#include <QWidget>
 #include <QtCore/QHash>
 
 class QLabel;

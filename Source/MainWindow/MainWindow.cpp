@@ -35,13 +35,13 @@
 #include "Source/DockWidget/ResultView/ResultView.h"
 #include "Source/DockWidget/ChartView/ChartView.h"
 
-#include <QtGui/QFileDialog>
-#include <QtGui/QCloseEvent>
-#include <QtGui/QDesktopServices>
-#include <QtGui/QMessageBox>
-#include <QtGui/QApplication>
-#include <QtGui/QClipboard>
-#include <QtGui/QStandardItem>
+#include <QFileDialog>
+#include <QCloseEvent>
+#include <QDesktopServices>
+#include <QMessageBox>
+#include <QApplication>
+#include <QClipboard>
+#include <QStandardItem>
 #include <QtCore/QTextCodec>
 #include <QtCore/QUrl>
 

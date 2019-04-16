@@ -18,7 +18,7 @@
 #ifndef GOTOLINEDIALOG_H
 #define GOTOLINEDIALOG_H
 
-#include <QtGui/QDialog>
+#include <QDialog>
 
 class QLabel;
 class QLineEdit;

@@ -18,7 +18,7 @@
 #ifndef LOADINGPOPUP_H
 #define LOADINGPOPUP_H
 
-#include <QtGui/QDialog>
+#include <QDialog>
 
 class LoadingWidget;
 class QLabel;

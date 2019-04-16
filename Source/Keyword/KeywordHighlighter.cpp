@@ -20,9 +20,9 @@
 #include "HighlightingResult.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QTextCharFormat>
-#include <QtGui/QTextCursor>
-#include <QtGui/QTextDocument>
+#include <QTextCharFormat>
+#include <QTextCursor>
+#include <QTextDocument>
 
 #if DEBUG
 #include <QtCore/QDebug>

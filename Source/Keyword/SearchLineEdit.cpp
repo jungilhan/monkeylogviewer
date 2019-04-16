@@ -18,10 +18,10 @@
 #include "SearchLineEdit.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QToolButton>
-#include <QtGui/QMenu>
-#include <QtGui/QAction>
-#include <QtGui/QPainter>
+#include <QToolButton>
+#include <QMenu>
+#include <QAction>
+#include <QPainter>
 
 SearchLineEdit::SearchLineEdit(bool enableCaseSensitive, bool enableWholeWords, bool enableRegularExpressions, QWidget* parent)
     : QLineEdit(parent)

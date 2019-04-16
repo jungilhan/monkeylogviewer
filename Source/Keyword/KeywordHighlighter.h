@@ -19,7 +19,7 @@
 #define KEYWORDHIGHLIGHTER_H
 
 #include <QtCore/QObject>
-#include <QtGui/QSyntaxHighlighter>
+#include <QSyntaxHighlighter>
 
 class Chart;
 class HighlightingResult;

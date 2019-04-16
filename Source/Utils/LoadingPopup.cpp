@@ -1,8 +1,8 @@
 #include "LoadingPopup.h"
 #include "LoadingWidget.h"
 
-#include <QtGui/QLabel>
-#include <QtGui/QKeyEvent>
+#include <QLabel>
+#include <QKeyEvent>
 
 #define POPUP_WIDTH 108
 #define POPUP_HEIGHT 88

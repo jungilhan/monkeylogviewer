@@ -18,7 +18,7 @@
 #include "HighlightingResult.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QStandardItem>
+#include <QStandardItem>
 #include <QtCore/QRegExp>
 
 HighlightingResult::HighlightingResult(QObject* parent)

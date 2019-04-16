@@ -19,10 +19,10 @@
 #include "LogViewer.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QPrinter>
-#include <QtGui/QPrintDialog>
-#include <QtGui/QTextDocument>
-#include <QtGui/QMessageBox>
+#include <QPrinter>
+#include <QPrintDialog>
+#include <QTextDocument>
+#include <QMessageBox>
 #include <QtCore/QRegExp>
 #include <QtCore/QTextCodec>
 

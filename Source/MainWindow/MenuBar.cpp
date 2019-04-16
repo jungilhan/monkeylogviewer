@@ -23,9 +23,9 @@
 #include "Source/Keyword/SearchLineEdit.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QToolBar>
-#include <QtGui/QPushButton>
-#include <QtGui/QLineEdit>
+#include <QToolBar>
+#include <QPushButton>
+#include <QLineEdit>
 
 MenuBar::MenuBar(QToolBar* toolBar, QWidget* parent)
     : QMenuBar(parent)

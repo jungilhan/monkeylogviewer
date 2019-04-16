@@ -17,9 +17,9 @@
 
 #include "GotoLineDialog.h"
 
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QPushButton>
+#include <QLabel>
+#include <QLineEdit>
+#include <QPushButton>
 
 GotoLineDialog::GotoLineDialog(QWidget* parent)
     : QDialog(parent)

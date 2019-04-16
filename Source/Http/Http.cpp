@@ -27,7 +27,7 @@
 #endif
 
 Http::Http(QObject* parent)
-    : QHttp(parent)
+    : QObject(parent)
     , m_Id(-1)
     , m_url(new QUrl)
     , m_data(new QBuffer(this))
@@ -42,47 +42,11 @@ Http::~Http()
     delete m_data;
 }
 
-int Http::connectUrl(const QString& url, QHttp::ConnectionMode mode)
+int Http::connectUrl(const QString& url)
 {
-    if (m_Id != -1)
-        return -1;
-
-    m_url->setUrl(url);
-
-    QString path = url;
-    path.remove(m_url->host());
-    if (path.contains("http://", Qt::CaseInsensitive))
-        path.remove("http://");
-    else if (path.contains("https://", Qt::CaseInsensitive))
-        path.remove("https://");
-
-    setHost(m_url->host(), mode);
-    m_Id = get(path, m_data);
-
-#if DEBUG
-    qDebug() << "[Http] Host: " << m_url->host();
-    qDebug() << "[Http] Path: " << path;
-#endif
 
     return m_Id;
 }
-
-void Http::readResponseHeader(const QHttpResponseHeader& responseHeader)
-{
-    switch (responseHeader.statusCode()) {
-    case 200:	// Ok
-        break;
-    case 301:	// Moved Permanently
-    case 303:	// See Other
-    case 307:	// Temporary Redirect
-    case 302:	// Found
-    case 400:	// BadRequest
-    case 404:	// Not Found
-    default:
-        abort();
-    }
-}
-
 void Http::httpRequestFinished(int requestId, bool error)
 {
     if (requestId != m_Id)

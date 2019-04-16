@@ -18,9 +18,9 @@
 #include "ChartView.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QLabel>
+#include <QLabel>
 #include <QtCore/QTimer>
-#include <QtGui/QScrollArea>
+#include <QScrollArea>
 
 ChartView::ChartView(const QString &title, bool lazyInit, QWidget *parent)
     : DockWidget(title, parent)
