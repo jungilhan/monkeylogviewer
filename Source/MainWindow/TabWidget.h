@@ -18,7 +18,7 @@
 #ifndef TABWIDGET_H
 #define TABWIDGET_H
 
-#include <QtGui/QTabWidget>
+#include <QTabWidget>
 
 class TabBar;
 

@@ -20,7 +20,7 @@
 
 #include <QtCore/QObject>
 #include <QtCore/QHash>
-#include <QtGui/QColor>
+#include <QColor>
 
 typedef struct {
     QColor background;

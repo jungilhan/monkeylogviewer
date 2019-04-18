@@ -21,13 +21,13 @@
 #include "Source/Setting/INIManager.h"
 #include "Source/Keyword/KeywordHighlighter.h"
 
-#include <QtGui/QTextBlock>
-#include <QtGui/QApplication>
-#include <QtGui/QWheelEvent>
-#include <QtGui/QPainter>
-#include <QtGui/QScrollBar>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QAbstractButton>
+#include <QTextBlock>
+#include <QApplication>
+#include <QWheelEvent>
+#include <QPainter>
+#include <QScrollBar>
+#include <QButtonGroup>
+#include <QAbstractButton>
 #include <QtCore/QRegExp>
 #include <QtCore/QUrl>
 #include <QtCore/QFile>
@@ -41,7 +41,7 @@
 #if QT_VERSION >= 0x040700 && PERFORMANCE_CHECK
 #include <QtCore/QElapsedTimer>
 #endif
-
+#include <QMimeData>
 #define LINENUMBER_AREA_LEFT_MARGIN 2
 #define LINENUMBER_AREA_RIGHT_MARGIN 5
 
@@ -135,21 +135,22 @@ void LogViewer::dragMoveEvent(QDragMoveEvent* event)
 
 void LogViewer::dropEvent(QDropEvent* event)
 {
-    QStringList localUrls = mimeTypeToLocalUrl(event->mimeData());
+    QStringList localUrls = mimeTypeToLocalUrl((QMimeData*)event->mimeData());
 
     foreach (const QString &url, localUrls) {
         emit fileDropped(url);
     }
 }
 
-QStringList LogViewer::mimeTypeToLocalUrl(const QMimeData* mimeData)
+QStringList LogViewer::mimeTypeToLocalUrl(QMimeData* mimeData)
 {
     QStringList localUrls;
 
     if (!mimeData->hasUrls())
         return localUrls;
 
-    foreach (const QUrl &url, mimeData->urls())
+    auto urls = mimeData->urls();
+    for(auto& url : urls)
         localUrls << url.toLocalFile();
 
     return localUrls;

@@ -17,9 +17,9 @@
 
 #include "ProgressDialog.h"
 
-#include <QtGui/QLabel>
-#include <QtGui/QProgressBar>
-#include <QtGui/QPushButton>
+#include <QLabel>
+#include <QProgressBar>
+#include <QPushButton>
 
 #include <QtCore/QTimer>
 

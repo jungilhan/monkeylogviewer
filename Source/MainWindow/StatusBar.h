@@ -18,8 +18,8 @@
 #ifndef STATUSBAR_H
 #define STATUSBAR_H
 
-#include <QtGui/QStatusBar>
-#include <QtGui/QComboBox>
+#include <QStatusBar>
+#include <QComboBox>
 
 class QStatusBar;
 class QLabel;

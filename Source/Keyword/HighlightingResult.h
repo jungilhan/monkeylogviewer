@@ -18,7 +18,7 @@
 #ifndef HIGHLIGHTINGRESULT_H
 #define HIGHLIGHTINGRESULT_H
 
-#include <QtGui/QStandardItemModel>
+#include <QStandardItemModel>
 
 class HighlightingResult : public QStandardItemModel
 {

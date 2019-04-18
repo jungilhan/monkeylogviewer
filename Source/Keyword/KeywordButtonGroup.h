@@ -18,7 +18,7 @@
 #ifndef KEYWORDBUTTONGROUP_H
 #define KEYWORDBUTTONGROUP_H
 
-#include <QtGui/QWidget>
+#include <QWidget>
 #include <QtCore/QHash>
 
 class QButtonGroup;

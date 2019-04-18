@@ -18,9 +18,9 @@
 #include "AboutDialog.h"
 #include "Source/Config.h"
 
-#include <QtGui/QLabel>
-#include <QtGui/QPushButton>
-#include <QtGui/QApplication>
+#include <QLabel>
+#include <QPushButton>
+#include <QApplication>
 
 #if defined(Q_OS_LINUX)
 #define FONT_FAMILY qApp->font().family()

@@ -19,8 +19,8 @@
 #define INIMANAGER_H
 
 #include <QtCore/QSettings>
-#include <QtGui/QFont>
-#include <QtGui/QColor>
+#include <QFont>
+#include <QColor>
 
 #define INIMANAGER() INIManager::getInstance()
 

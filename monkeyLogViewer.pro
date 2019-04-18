@@ -4,8 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui network
-
+QT       += core widgets network printsupport
+CONFIG += c++11
 TARGET = monkeyLogViewer
 TEMPLATE = app
 

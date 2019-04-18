@@ -18,7 +18,7 @@
 #ifndef SEARCHLINEEDIT_H
 #define SEARCHLINEEDIT_H
 
-#include <QtGui/QLineEdit>
+#include <QLineEdit>
 
 class QToolButton;
 class QMenu;

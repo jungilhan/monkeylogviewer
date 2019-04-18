@@ -19,8 +19,8 @@
 #include "FontSetupPage.h"
 #include "HighlightSetupPage.h"
 
-#include <QtGui/QTabWidget>
-#include <QtGui/QPushButton>
+#include <QTabWidget>
+#include <QPushButton>
 
 OptionDialog::OptionDialog(QWidget* parent)
     : QDialog(parent)

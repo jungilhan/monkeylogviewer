@@ -20,14 +20,14 @@
 #include "Source/LogViewer/LogViewer.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QGroupBox>
-#include <QtGui/QLabel>
-#include <QtGui/QFontComboBox>
-#include <QtGui/QComboBox>
-#include <QtGui/QFontDatabase>
-#include <QtGui/QPushButton>
-#include <QtGui/QColorDialog>
-#include <QtGui/QApplication>
+#include <QGroupBox>
+#include <QLabel>
+#include <QFontComboBox>
+#include <QComboBox>
+#include <QFontDatabase>
+#include <QPushButton>
+#include <QColorDialog>
+#include <QApplication>
 #include <QtCore/QTextCodec>
 
 FontSetupPage::FontSetupPage(QWidget *parent)

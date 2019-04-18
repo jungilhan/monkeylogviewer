@@ -18,7 +18,7 @@
 #ifndef WINDOWSMENU_H
 #define WINDOWSMENU_H
 
-#include <QtGui/QMenu>
+#include <QMenu>
 
 class WindowsMenu : public QMenu
 {

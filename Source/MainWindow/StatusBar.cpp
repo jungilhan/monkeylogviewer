@@ -17,8 +17,8 @@
 
 #include "StatusBar.h"
 
-#include <QtGui/QLabel>
-#include <QtGui/QComboBox>
+#include <QLabel>
+#include <QComboBox>
 #include <QtCore/QTextCodec>
 #include <QtCore/QByteArray>
 

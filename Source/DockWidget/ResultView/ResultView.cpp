@@ -18,9 +18,9 @@
 #include "ResultView.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QTreeView>
-#include <QtGui/QStandardItemModel>
-#include <QtGui/QStandardItem>
+#include <QTreeView>
+#include <QStandardItemModel>
+#include <QStandardItem>
 
 #include <QtCore/QModelIndex>
 

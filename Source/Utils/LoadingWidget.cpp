@@ -17,7 +17,7 @@
 
 #include "LoadingWidget.h"
 
-#include <QtGui/QMovie>
+#include <QMovie>
 
 LoadingWidget::LoadingWidget(QWidget *parent)
     : QLabel(parent)

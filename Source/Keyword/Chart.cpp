@@ -19,7 +19,7 @@
 #include "Source/Http/Http.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QPixmap>
+#include <QPixmap>
 
 #define CHART_URL "http://chart.apis.google.com/chart"
 

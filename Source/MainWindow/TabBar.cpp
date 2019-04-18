@@ -18,9 +18,9 @@
 #include "TabBar.h"
 #include "Source/Utils/LoadingWidget.h"
 
-#include <QtGui/QMenu>
-#include <QtGui/QAction>
-#include <QtGui/QMouseEvent>
+#include <QMenu>
+#include <QAction>
+#include <QMouseEvent>
 
 TabBar::TabBar(QWidget* parent)
     : QTabBar(parent)

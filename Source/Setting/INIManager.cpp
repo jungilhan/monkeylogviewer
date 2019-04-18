@@ -18,7 +18,7 @@
 #include "INIManager.h"
 #include "Source/Config.h"
 
-#include <QtGui/QApplication>
+#include <QApplication>
 #include <QtCore/QCoreApplication>
 
 #if DEBUG

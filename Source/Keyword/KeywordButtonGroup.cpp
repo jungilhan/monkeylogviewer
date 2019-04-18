@@ -18,10 +18,10 @@
 #include "KeywordButtonGroup.h"
 #include "Source/Setting/INIManager.h"
 
-#include <QtGui/QButtonGroup>
-#include <QtGui/QPushButton>
-#include <QtGui/QApplication>
-#include <QtGui/QHBoxLayout>
+#include <QButtonGroup>
+#include <QPushButton>
+#include <QApplication>
+#include <QHBoxLayout>
 
 #if DEBUG
 #include <QtCore/QDebug>
@@ -83,7 +83,7 @@ void KeywordButtonGroup::keywordStateChanged(QHash<QString, bool>& keywordStateH
     QStringList addedKeywordList;
     QStringList removedKeywordList;
 
-    // »èÁ¦ »ðÀÔ Á¤º¸ °»½Å.
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
     foreach (const QString& keyword, keywordStateHash.keys()) {
 #if DEBUG
         qDebug() << "[keywordStateChanged]" << keyword << ": " << keywordStateHash.value(keyword);

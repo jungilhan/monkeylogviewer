@@ -18,7 +18,7 @@
 #ifndef PROGRESSDIALOG_H
 #define PROGRESSDIALOG_H
 
-#include <QtGui/QDialog>
+#include <QDialog>
 
 class QLabel;
 class QProgressBar;

@@ -18,7 +18,7 @@
 #ifndef MENUBAR_H
 #define MENUBAR_H
 
-#include <QtGui/QMenuBar>
+#include <QMenuBar>
 
 class QToolBar;
 class KeywordButtonGroup;

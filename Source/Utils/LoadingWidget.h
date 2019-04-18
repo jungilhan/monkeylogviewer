@@ -18,7 +18,7 @@
 #ifndef LOADINGWIDGET_H
 #define LOADINGWIDGET_H
 
-#include <QtGui/QLabel>
+#include <QLabel>
 
 class QMovie;
 

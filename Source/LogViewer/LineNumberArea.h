@@ -19,7 +19,7 @@
 #define LINENUMBERAREA_H
 
 #include "Source/LogViewer/LogViewer.h"
-#include <QtGui/QWidget>
+#include <QWidget>
 
 class LineNumberArea : public QWidget
 {

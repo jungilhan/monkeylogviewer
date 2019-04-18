@@ -16,7 +16,7 @@
 */
 
 #include <QtCore/QTextCodec>
-#include <QtGui/QApplication>
+#include <QApplication>
 #include "MainWindow/MainWindow.h"
 
 int main(int argc, char *argv[])

@@ -18,12 +18,13 @@
 #ifndef HTTP_H
 #define HTTP_H
 
-#include <QtNetwork/QHttp>
+#include <QtNetwork>
+#include <QNetworkAccessManager>
 
 class QUrl;
 class QByteArray;
 
-class Http : public QHttp
+class Http : public QObject
 {
     Q_OBJECT
 
@@ -34,10 +35,8 @@ public:
     Http(QObject* parent = 0);
     virtual ~Http();
 
-    int connectUrl(const QString& url, QHttp::ConnectionMode mode = QHttp::ConnectionModeHttp);
-
+    int connectUrl(const QString& url);
 private slots:
-    void readResponseHeader(const QHttpResponseHeader& responseHeader);
     void httpRequestFinished(int requestId, bool error);
 
 private:

@@ -18,7 +18,7 @@
 #ifndef TABBAR_H
 #define TABBAR_H
 
-#include <QtGui/QTabBar>
+#include <QTabBar>
 
 class QMenu;
 class QAction;

@@ -20,9 +20,9 @@
 #include "Source/Utils/ProgressDialog.h"
 #include "Source/Utils/LoadingPopup.h"
 
-#include <QtGui/QApplication>
-#include <QtGui/QDesktopServices>
-#include <QtGui/QMessageBox>
+#include <QApplication>
+#include <QDesktopServices>
+#include <QMessageBox>
 
 #include <QtCore/QProcess>
 #include <QtCore/QXmlStreamReader>
@@ -50,11 +50,11 @@ Updater::Updater(QObject* parent)
 
 Updater::~Updater()
 {
-    if (m_xmlDownloader->currentId())
-        m_xmlDownloader->abort();
-
-    if (m_binaryDownloader->currentId())
-        m_binaryDownloader->abort();
+//    if (m_xmlDownloader->currentId())
+//        m_xmlDownloader->abort();
+//
+//    if (m_binaryDownloader->currentId())
+//        m_binaryDownloader->abort();
 
     delete m_xmlDownloader;
     delete m_binaryDownloader;
@@ -103,7 +103,7 @@ void Updater::downloadXmlFinished(QIODevice* data, bool error)
     closeLoadingPopup();
 
     if (error) {
-        QMessageBox::critical(mainWindow(), tr("Update Error"), QString("Error Code: %1").arg(m_binaryDownloader->lastResponse().statusCode()) + "\n" + m_binaryDownloader->errorString());
+//        QMessageBox::critical(mainWindow(), tr("Update Error"), QString("Error Code: %1").arg(m_binaryDownloader->lastResponse().statusCode()) + "\n" + m_binaryDownloader->errorString());
         return;
     }
 
@@ -143,7 +143,7 @@ void Updater::downloadBinaryFinished(QIODevice* data, bool error)
         if (m_progressDialog->isVisible())
             m_progressDialog->hide();
 
-        QMessageBox::critical(mainWindow(), tr("Update Error"), QString("Error Code: %1").arg(m_binaryDownloader->lastResponse().statusCode()) + "\n" + m_binaryDownloader->errorString());
+//        QMessageBox::critical(mainWindow(), tr("Update Error"), QString("Error Code: %1").arg(m_binaryDownloader->lastResponse().statusCode()) + "\n" + m_binaryDownloader->errorString());
         return;
     }
 
@@ -177,8 +177,8 @@ void Updater::patchRequested()
 
 void Updater::patchCancled()
 {
-    if (m_binaryDownloader->currentId())
-        m_binaryDownloader->abort();
+//    if (m_binaryDownloader->currentId())
+//        m_binaryDownloader->abort();
 }
 
 void Updater::startPatch()

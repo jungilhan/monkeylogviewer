@@ -18,7 +18,7 @@
 #ifndef LOGVIEWER_H
 #define LOGVIEWER_H
 
-#include <QtGui/QPlainTextEdit>
+#include <QPlainTextEdit>
 
 class LineNumberArea;
 class KeywordHighlighter;
@@ -123,7 +123,7 @@ private:
     void insertForegroundStyle(QString& text);
     void insertLineBreak(QString& text);
     bool isEmptyBlock(const QString& text);
-    QStringList mimeTypeToLocalUrl(const QMimeData* mimeData);
+    QStringList mimeTypeToLocalUrl(QMimeData* mimeData);
 
 private:
     bool m_showLineNumber;

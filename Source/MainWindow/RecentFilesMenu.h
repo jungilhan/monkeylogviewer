@@ -18,8 +18,8 @@
 #ifndef RECENTFILESMENU_H
 #define RECENTFILESMENU_H
 
-#include <QtGui/QMenu>
-#include <QtGui/QActionGroup>
+#include <QMenu>
+#include <QActionGroup>
 
 class RecentFilesMenu : public QMenu
 {
